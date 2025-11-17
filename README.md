@@ -2,7 +2,7 @@
 
 1. change directory
     ```bash
-    cd　UR-Robotiq-Integrated-Driver
+    cd UR-Robotiq-Integrated-Driver
     ```
 
 2. run docker-container 
@@ -74,4 +74,21 @@
 
     ```bash
     ros2 service call /robotiq/auto_open/soft std_srvs/srv/Trigger
+    ```
+
+13. close && open (soft medium strong etc...)
+    ```bash
+    ./grip.bash soft
+    ```
+    
+    ```bash
+    ./grip.bash medium
+    ```
+
+    ```bash
+    ./grip.bash strong
+    ```
+
+    ```bash
+    chmod +x grip.bash
     ```
